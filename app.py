@@ -78,7 +78,7 @@ answers = {
 }
 
 # -------------------------------
-# Main solve function (language-aware)
+# Main solve function
 # -------------------------------
 def solve_doubt(question, lang):
     q = question.lower()
@@ -95,9 +95,7 @@ def solve_doubt(question, lang):
     }
     return fallback.get(lang, fallback["en"])
 
-# -------------------------------
-# Flask routes
-# -------------------------------
+
 @app.route("/", methods=["GET", "POST"])
 def index():
     answer = ""
@@ -118,7 +116,7 @@ def index():
 
         dict_lang, tts_lang = lang_map.get(language, ("en", "en"))
         answer = solve_doubt(question, dict_lang)
- # --------- CREATE AUDIO ----------
+ # ---------VOICE OUTPUT ----------
         os.makedirs("static/audio", exist_ok=True)
         filename = f"{uuid.uuid4()}.mp3"
         filepath = os.path.join("static/audio", filename)
@@ -135,8 +133,7 @@ def index():
         audio_file=audio_file,
         language=language
     )
-# -------------------------------
-# Run app
-# -------------------------------
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
