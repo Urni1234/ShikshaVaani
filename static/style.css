@@ -1,0 +1,134 @@
+/* General Fonts & Body */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* Background image with light overlay using semi-transparent gradient */
+    background: 
+        linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+        url('images/images_book.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Main container */
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Titles */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Form elements */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    height: 90px;
+}
+
+/* Get Answer Button - glossy style */
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(145deg, #2ecc71, #27ae60);
+    color: white;
+    font-size: 16px;
+    border: 1px solid #27ae60;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #27ae60, #2ecc71);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* Chat box */
+.chat-box {
+    margin-top: 25px;
+}
+
+/* User messages */
+.user-msg {
+    background: #ecf0f1;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    text-align: right;
+    position: relative;
+}
+
+/* AI messages with language-specific colors */
+.ai-msg {
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    text-align: left;
+    position: relative;
+    color: #111;
+}
+
+/* Language colors */
+.ai-msg.english { background-color: #d0e6ff; }
+.ai-msg.hindi { background-color: #ffe6d0; }
+.ai-msg.bengali { background-color: #f0d0ff; }
+.ai-msg.kannada { background-color: #d0ffd6; }
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-badge {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+.ai-badge {
+    background-color: #34495e;
+    color: white;
+}
+
+.hint {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #666;
+}
