@@ -2,35 +2,39 @@
 
 **Shiksha** means education and **Vaani** means voice.
 ShikshaVaani is a lightweight, multilingual AI-powered doubt solver designed for Indian students. 
-It helps learners understand basic academic concepts in **their own language**, with **text and voice support**, even in **low-bandwidth environments**.
+It helps learners understand basic academic concepts in **their own language**, with **text and voice support**
 
 ---
 
 ##  What it does
 - Ask questions in **English**
-- Get answers in:
+- Get answers in your preferred language below :
   - English
   - Hindi
   - Bengali
   - Kannada
+  - Punjabi
+  - Gujarati
+  - Tamil
+  - Telugu
 - Listen to answers using **voice (Text-to-Speech)**
-- Works smoothly on **mobile and desktop**
+  
 
 ---
 
 ##  How it’s built
 - **Flask (Python)** backend
-- Predefined knowledge base (Physics & Mathematics)
+- **ASI One api** used 
 - **gTTS** for multilingual audio output
 - HTML, CSS & JavaScript for UI
-- Optimized for **low data usage**
+
 
 ---
 
 ##  Why it matters
-Many students in Bharat struggle due to:
+Many students in India struggle due to:
 - Language barriers
-- Limited internet access
+- It is built keeping in mind about Indian regional languages
 
 ShikshaVaani makes learning **simple, inclusive, and accessible**.
 
@@ -48,11 +52,8 @@ ShikshaVaani makes learning **simple, inclusive, and accessible**.
 
 ##  Future scope
 - Voice-based question input
-- More subjects & languages
 - Offline support (PWA)
-
+- More languages to be integrated
 ---
 
-## Hackathon 
-- Built for **AI for Bharat Hacakthon 2026**
 
